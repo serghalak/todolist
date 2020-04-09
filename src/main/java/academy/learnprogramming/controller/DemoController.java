@@ -14,4 +14,9 @@ public class DemoController {
         System.out.println(">>>>>>>>>>>>>Hello");
         return "hello";
     }
+
+    @GetMapping("welcome")
+    public String welcome(){
+        return "welcome";
+    }
 }
