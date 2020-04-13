@@ -14,11 +14,11 @@ public class TodoItem {
     private String details;
     private LocalDate deadLine;
 
-//    public TodoItem(String title, String details, LocalDate deadLine) {
-//        this.title = title;
-//        this.details = details;
-//        this.deadLine = deadLine;
-//    }
+    public TodoItem(String title, String details, LocalDate deadLine) {
+        this.title = title;
+        this.details = details;
+        this.deadLine = deadLine;
+    }
 //
 //    public int getId() {
 //        return id;
