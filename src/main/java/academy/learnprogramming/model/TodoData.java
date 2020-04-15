@@ -1,6 +1,7 @@
 package academy.learnprogramming.model;
 
 import lombok.NonNull;
+import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -8,6 +9,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.ListIterator;
 
+@Slf4j
 public class TodoData {
 
     private static int idValue=1;
@@ -57,10 +59,12 @@ public class TodoData {
         ListIterator<TodoItem>itemIterator=items.listIterator();
         while(itemIterator.hasNext()){
             TodoItem item=itemIterator.next();
+
             if(item.equals(toUpdate)){
-                itemIterator.set(item);
+                itemIterator.set(toUpdate);
                 break;
             }
         }
+
     }
 }
